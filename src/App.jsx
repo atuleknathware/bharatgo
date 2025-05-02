@@ -11,6 +11,7 @@ const App = () => {
     <>
       <BrowserRouter>
         <Routes>
+          <Route path={`/`} element={<Product />} />
           {["all", "clothess", "electronics", "furniture", "shoes"].map(
             (cat) => (
               <Route key={cat} path={`/${cat}`} element={<Product />} />

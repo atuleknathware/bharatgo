@@ -29,7 +29,7 @@ const Product = () => {
 
   // Filter product based on category
   const filterProduct = (data, category) => {
-    return category === "all"
+    return category === "all" || category === ""
       ? data
       : data.filter((product) => product.category?.slug === category);
   };
